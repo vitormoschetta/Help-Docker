@@ -48,6 +48,16 @@ docker ps -a
 docker start <id container>
 ```
 
+#### Parar um container:
+```
+docker stop <id container>
+```
+
+#### Excluir um container:
+```
+docker container rm <container ID>
+```
+
 #### Detalhes sobre container ou imagem:
 ```
 docker inspect <id container/imagem>
