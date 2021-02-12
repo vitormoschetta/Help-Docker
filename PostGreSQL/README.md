@@ -47,3 +47,12 @@ docker start <container id>
 
 <br>
 <br>
+
+
+#### Parar o Container:
+```
+docker stop <container id>
+```
+
+<br>
+<br>
