@@ -43,6 +43,11 @@ docker ps
 docker ps -a
 ```
 
+#### Startar um container:
+```
+docker start <id container>
+```
+
 #### Detalhes sobre container ou imagem:
 ```
 docker inspect <id container/imagem>
