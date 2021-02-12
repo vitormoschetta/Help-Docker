@@ -30,7 +30,7 @@ docker pull <imagem>
 ```
 docker run <imagem>
 ```
-Obs: Este comando apenas executa a imagem e 'morre'. Seria como um _build_.
+    Este comando apenas executa a imagem e 'morre'. Seria como um _build_.
 
 
 
