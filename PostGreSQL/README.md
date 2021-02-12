@@ -22,7 +22,7 @@ docker images
 ```
 docker run -p 5432:5432 -e POSTGRES_PASSWORD=1234 postgres
 ```
-> -p 5432:5432 --> é usado para mapear a porta do docker para o _host_(externo ao docker)
+> -p 5432:5432 --> é usado para mapear a porta do docker para o _host_(externo ao docker)  
 > POSTGRES_PASSWORD=1234  --> definir a senha 
 
 <br>
