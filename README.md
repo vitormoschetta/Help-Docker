@@ -33,6 +33,10 @@ docker run <imagem>
 > O comando acima apenas executa a imagem e 'morre'. Seria como um _build_.
 
 
+#### Consultar containers:
+```
+docker ps 
+```
 
 
 
