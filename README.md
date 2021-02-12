@@ -73,5 +73,8 @@ docker inspect <id container/imagem>
 ```
 
 
+<br>
+<br>
 
-
+#### Referências
+<https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd>
