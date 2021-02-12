@@ -6,16 +6,6 @@ docker info
 docker version
 ```
 
-#### Consultar imagens existentes:
-```
-docker ps -a
-```
-
-#### Consultar imagens existentes no host:
-```
-docker images
-```
-
 #### Consultar imagens existentes no host:
 ```
 docker images
@@ -31,6 +21,7 @@ docker pull <imagem>
 docker run <imagem>
 ```
 > O comando acima apenas executa a imagem e 'morre'. Seria como um _build_.
+> Detalhe: Se a imagem não for encontrada o Docker tentará baixar do _Hub_.
 
 
 #### Excluir imagem:
