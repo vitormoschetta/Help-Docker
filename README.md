@@ -33,10 +33,33 @@ docker run <imagem>
 > O comando acima apenas executa a imagem e 'morre'. Seria como um _build_.
 
 
-#### Consultar containers:
+#### Consultar containers em execução:
 ```
 docker ps 
 ```
+
+#### Consultar containers parados:
+```
+docker ps -a
+```
+
+#### Detalhes sobre container ou imagem:
+```
+docker inspect <id container/imagem>
+```
+
+#### Deletar imagem:
+```
+docker rmi <id/nome imagem>
+```
+> Se houver algum container usando essa imagem, mesmo que parado, não será possível excluí-la.
+
+
+#### Deletar imagem:
+```
+docker rmi <id/nome imagem>
+```
+> Se houver algum container usando essa imagem, mesmo que parado, não será possível excluí-la.
 
 
 
