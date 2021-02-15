@@ -66,6 +66,15 @@ docker inspect <id container/imagem>
 
 <br>
 <br>
+### Instalar uma interface para o Docker no Linux
+```
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+```
+Depois de executado o comando acima, é só acessar a url abaixo e definir sua senha.     
+<http://localhost:9000>  
+
+<br>
+<br>
 
 #### Referências
 <https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd>
