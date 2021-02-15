@@ -76,5 +76,11 @@ Depois de executado o comando acima, é só acessar a url abaixo e definir sua s
 <br>
 <br>
 
+
+### Saiba como inicializar Containers do Docker nos demais repositórios.
+
+<br>
+<br>
+
 #### Referências
 <https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd>
