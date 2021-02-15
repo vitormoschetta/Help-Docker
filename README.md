@@ -16,7 +16,7 @@ docker images
 docker pull <imagem>
 ```
 
-#### Executar uma imagem:
+#### Iniciar uma instância do container através de uma imagem:
 ```
 docker run <imagem>
 ```
