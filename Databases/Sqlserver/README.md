@@ -41,6 +41,11 @@ User: sa
 Password: Password123*
 ``` 
 
+Sua string de conexão ficaria parecido com isso:
+```
+"Server=localhost,1433;Database=database_name;user=sa;password=Password123*"; 
+```
+
 
 #### Consultar Containers em execução:
 ```
