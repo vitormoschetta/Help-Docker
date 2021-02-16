@@ -124,11 +124,6 @@ docker inspect <container_id or container_name>
 ## Volumes Docker
 Embora os contêineres possam criar, atualizar e excluir arquivos, essas alterações são perdidas quando o contêiner é removido. Com volumes, podemos mudar tudo isso.
 
-Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
-
-
-<br>
-
 Abaixo alguns comandos básicos:
 
 
@@ -139,37 +134,6 @@ docker volume ls
 
 
 
-<br>
-<br>
-
-### Docker Prune 
-Server para excluir recursos não utilizados. 
-
-#### Remove todos os recursos docker não utilizados (container, images, volumes, etc):
-```
-docker system prune 
-```
-
-<br>
-
-#### Remove apenas volumes não utilizados:
-```
-docker volume prune
-```
-
-<br>
-
-#### Remove apenas imagens não utilizadas:
-```
-docker image prune 
-```
-
-<br>
-
-#### Remove apenas conteiners não utilizados:
-```
-docker conteiner prune 
-```
 
 
 <br>
@@ -213,6 +177,14 @@ String de conexão:
 
 
 
+<br>
+
+#### Instanciar conteiner com volume
+
+Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
+
+
+
 
 
 <br>
@@ -220,22 +192,6 @@ String de conexão:
 
 ## Comunicação entre Conteiners
 Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicar.
-
-
-
-
-
-
-<br>
-<br>
-
-## Volumes
-Embora os contêineres possam criar, atualizar e excluir arquivos, essas alterações são perdidas quando o contêiner é removido. Com volumes, podemos mudar tudo isso.
-
-Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
-
-
-
 
 
 
@@ -271,6 +227,46 @@ Depois de executado o comando acima, é só acessar a url abaixo e definir sua s
 <http://localhost:9000>  
 
 
+
+
+
+
+
+<br>
+<br>
+
+## Outros comandos 
+
+### Docker Prune 
+Server para excluir recursos não utilizados. 
+
+Segue alguns comandos:
+
+#### Remove todos os recursos docker não utilizados (container, images, volumes, etc):
+```
+docker system prune 
+```
+
+<br>
+
+#### Remove apenas volumes não utilizados:
+```
+docker volume prune
+```
+
+<br>
+
+#### Remove apenas imagens não utilizadas:
+```
+docker image prune 
+```
+
+<br>
+
+#### Remove apenas conteiners não utilizados:
+```
+docker conteiner prune 
+```
 
 
 <br>
