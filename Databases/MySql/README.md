@@ -3,7 +3,7 @@
 #### Baixar imagem:
 
 ```
-docker pull postgres
+docker pull mysql
 ```
 
 <br>
@@ -18,19 +18,19 @@ docker images
 
 #### Criar um Container a partir da Imagem:
 ```
-docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=Pass123* -d postgres
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Pass123* -d mysql
 ```
 
 Explicação dos parâmetros: 
 
 ```
-"--name postgres" é o nome do container que definimos.
+"--name mysql" é o nome do container que definimos.
 
-"-p 5432:5432" é usado para mapear a porta 5432 do container para 5432 do _host_(máquina local).  
+"-p 3306:3306" é usado para mapear a porta 3306 do container para 3306 do _host_(máquina local).  
 
-"-e POSTGRES_PASSWORD=Pass123*" é a senha definida para o usuário postgres (admin).
+"-e MYSQL_ROOT_PASSWORD=Pass123*" é a senha definida para o usuário root (admin).
 
-"-d postgres" a imagem utilizada para criar o container.
+"-d mysql" a imagem utilizada para criar o container.
 ```
 
 
@@ -39,14 +39,14 @@ Explicação dos parâmetros:
 Se tudo ocorreu como gostaríamos, você poderá acessar o Banco de Dados Sql Server através dos seguintes atributos:
 ```
 Host: localhost
-Port: 5432
-User: postgres
+Port: 3306
+User: root
 Password: Pass123*
 ``` 
 
 Sua string de conexão ficaria parecido com isso:
 ```
-"Host=localhost;Port=5432;Database=database_name;User ID=postgres;Password=Pass123*;" 
+"Server=localhost;Port=3306;Database=database_name;Uid=root;Pwd=Pass123*;" 
 ```
 Obs: "localhost" pode ser substituído pelo IP da máquina.
 
