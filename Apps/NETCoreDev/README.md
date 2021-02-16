@@ -111,7 +111,7 @@ Move o console para a pasta "App" da imagem
 ```
 ENTRYPOINT ["dotnet", "api.dll"]
 ```
-Define o que será mantido em execução ao instanciar a imagem em um contêiner.
+Especifica o comando padrão a ser executado ao iniciar um contêiner a partir desta imagem.
 
 
 

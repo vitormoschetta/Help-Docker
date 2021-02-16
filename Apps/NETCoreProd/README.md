@@ -41,10 +41,11 @@ Move o console para o diretório "/App" da imagem
 
 <br>
 
-Aplica o comando "dotnet" sobre o arquivo "api.dll"
 ```
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
+Especifica o comando padrão a ser executado ao iniciar um contêiner a partir desta imagem.
+
 
 <br>
 
