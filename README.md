@@ -1,5 +1,6 @@
 # Help-Docker
 
+
 ## Imagem
 
 #### Informações sobre o docker instalado:
@@ -22,8 +23,7 @@ docker pull <imagem>
 ```
 docker run <imagem>
 ```
-> O comando acima apenas executa a imagem e 'morre'. Seria como um _build_.
-> Detalhe: Se a imagem não for encontrada o Docker tentará baixar do _Hub_.
+**Detalhe**: Se a imagem não for encontrada o Docker tentará baixar do _Hub_.
 
 
 #### Excluir imagem:
