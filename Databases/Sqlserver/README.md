@@ -47,7 +47,14 @@ Sua string de conexão ficaria parecido com isso:
 ```
 Obs: "localhost" pode ser substituído pelo IP da máquina.
 
+
+
 <br>
+<br>
+
+
+
+## Outros comandos Docker:
 
 
 #### Consultar Containers em execução:
