@@ -113,17 +113,6 @@ ENTRYPOINT ["dotnet", "api.dll"]
 
 
 
-### Publicando primeiro
-Em momento algum executamos um _build_ ou um _publish_, pois estamos pegando os arquivos já em formato de _.dll_ da pasta publish do projeto .NET Core. Ou seja, antes de rodar esta imagem precisamos executar o seguinte comando na raíz da aplicação:
-
-```
-dotnet publish -c Release
-```
-
-<br>
-<br>
-
-
 ## Gerando a imagem
 ```
 docker build -t netcoreapp -f Dockerfile.dev .
