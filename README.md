@@ -15,7 +15,11 @@ docker version
 
 ## Imagens Docker
 
-Uma imagem pode ser baixada do Hub (repositório online do Docker). Existem centenas de milhares de imagens disponíveis.
+Uma imagem é um pacote com todas as dependências e informações necessárias para criar um contêiner.
+
+Geralmente, uma imagem deriva de várias imagens base que são camadas empilhadas umas sobre as outras para formar o sistema de arquivos do contêiner. Uma imagem é imutável depois de ser criada.
+
+Podemos baixar imagens prontas do Docker Hub (repositório online do Docker) ou outro repositório. Existem centenas de milhares de imagens disponíveis.
 
 Podemos, também, criar as nossas próprias imagens. Veremos isso mais a diante. 
 
@@ -159,3 +163,11 @@ Depois de executado o comando acima, é só acessar a url abaixo e definir sua s
 
 
 
+
+<br>
+<br>
+<br>
+<br>
+
+### Referências:
+<https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-terminology>
