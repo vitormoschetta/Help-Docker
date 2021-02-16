@@ -10,17 +10,19 @@ COPY src/Api/bin/Release/netcoreapp3.1/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
-
-#### Explicando cada linha:
-
-Informa a lib/biblioteca a ser utilizada:
-```
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
-``` 
+Estas são as instruções que ficarão contidas na imagem ao ser criada, e que também serão repassadas ao contêiner quando esta imagem for instanciada.
 
 <br>
 
-Copia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/publish/" do host para dentro do diretório "App/" da imagem que está sendo criada:
+#### Explicando cada linha:
+```
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+``` 
+Informa a imagem base ser utilizada/baixada.
+
+<br>
+
+Informa que o coCopia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/publish/" do _host_ para dentro do diretório "App/" da imagem que está sendo criada:
 ```
 COPY src/Api/bin/Release/netcoreapp3.1/publish/ App/
 ``` 
