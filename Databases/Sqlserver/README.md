@@ -54,7 +54,7 @@ Obs: "localhost" pode ser substituído pelo IP da máquina.
 
 
 
-## Outros úteis para esta seção:
+## Outros comandos úteis para esta seção:
 
 
 #### Consultar Containers em execução:
