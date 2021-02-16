@@ -137,8 +137,6 @@ Para criar a própria imagem precisamos definir um arquivo chamado 'Dockerfile'.
 Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
 
 
-
-<br>
 <br>
 
 #### Host e Container
