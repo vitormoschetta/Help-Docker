@@ -1,0 +1,17 @@
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/bin/Release/netstandard2.0/domain.deps.json
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/bin/Release/netstandard2.0/domain.dll
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/bin/Release/netstandard2.0/domain.pdb
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/obj/Release/netstandard2.0/domain.AssemblyInfoInputs.cache
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/obj/Release/netstandard2.0/domain.AssemblyInfo.cs
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/obj/Release/netstandard2.0/domain.csproj.CoreCompileInputs.cache
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/obj/Release/netstandard2.0/domain.dll
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Domain/obj/Release/netstandard2.0/domain.pdb
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/bin/Release/netstandard2.0/domain.deps.json
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/bin/Release/netstandard2.0/domain.dll
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/bin/Release/netstandard2.0/domain.pdb
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.csprojAssemblyReference.cache
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.AssemblyInfoInputs.cache
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.AssemblyInfo.cs
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.csproj.CoreCompileInputs.cache
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.dll
+/home/victor/Documents/Vitor/GitHub/Backend-NETCore-Container/src/Domain/obj/Release/netstandard2.0/domain.pdb
