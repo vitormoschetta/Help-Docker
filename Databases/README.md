@@ -7,7 +7,7 @@ Veremos também como expor a porta do container ao host (márquina local) para q
 <br>
 
 
-### Bancos utilizados:
+#### Mais detalhes nos seguintes diretórios
 
 [Sql Server](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Sqlserver)
 
