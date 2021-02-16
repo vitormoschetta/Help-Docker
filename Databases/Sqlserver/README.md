@@ -47,6 +47,8 @@ Sua string de conexão ficaria parecido com isso:
 ```
 Obs: "localhost" pode ser substituído pelo IP da máquina.
 
+<br>
+
 
 #### Consultar Containers em execução:
 ```
