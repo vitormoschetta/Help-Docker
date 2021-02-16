@@ -119,7 +119,7 @@ Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-
 <br>
 
 #### Criar a própria imagem
-Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
+Para criar a própria imagem precisamos definir um arquivo chamado 'Dockerfile'.  
 
 Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
 
