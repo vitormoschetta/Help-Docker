@@ -2,6 +2,7 @@
 
 Obs: Não abordaremos instação do Docker.
 
+
 <br>
 
 #### Informações sobre o docker instalado:
@@ -10,8 +11,8 @@ docker info
 docker version
 ```
 
-<br>
 
+<br>
 
 ## Imagens Docker
 
@@ -23,9 +24,10 @@ Podemos baixar imagens prontas do Docker Hub (repositório online do Docker) ou 
 
 Podemos, também, criar as nossas próprias imagens. Veremos isso mais a diante. 
 
-<br>
 
+<br>
 Abaixo, alguns comandos básicos:
+
 
 <br>
 
@@ -34,6 +36,7 @@ Abaixo, alguns comandos básicos:
 docker images
 ```
 
+
 <br>
 
 #### Baixar uma nova imagem
@@ -41,6 +44,7 @@ O comando abaixo busca no Docker Hub uma imagem com o nome informado:
 ```
 docker pull <image_name>
 ```
+
 
 <br>
 
@@ -52,11 +56,11 @@ Se houver algum container usando a imagem, será necessário primeiro excluir o 
 
 
 
+
+
+
 <br>
 <br>
-
-
-
 
 ## Containers Docker
 Container é uma instância de uma determinada imagem. Ele fica em um ambiente isolado no Sistema Operacional, onde possui sua própria rede, host e portas.
@@ -70,12 +74,14 @@ Abaixo alguns comandos básicos:
 docker ps 
 ```
 
+
 <br>
 
 #### Consultar containers parados:
 ```
 docker ps -a
 ```
+
 
 <br>
 
@@ -84,12 +90,14 @@ docker ps -a
 docker start <container_id or container_name>
 ```
 
+
 <br>
 
 #### Parar um container:
 ```
 docker stop <container_id or container_name>
 ```
+
 
 <br>
 
@@ -98,8 +106,8 @@ docker stop <container_id or container_name>
 docker container rm <container_id or container_name>
 ```
 
-<br>
 
+<br>
 
 #### Detalhes sobre container ou imagem:
 ```
@@ -108,10 +116,10 @@ docker inspect <container_id or container_name>
 
 
 
-<br>
-<br>
 
 
+<br>
+<br>
 
 ## Mão na massa
 
@@ -119,6 +127,7 @@ docker inspect <container_id or container_name>
 Vamos utilizar imagens de bancos de dados conhecidos para instanciar containers.
 
 Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases).
+
 
 <br>
 
@@ -130,13 +139,40 @@ Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docke
 
 
 
+
+
 <br>
 <br>
 
+## Comunicação do host com container
+Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Subimos um conteiner de aplicação e também subimos contêires de banco de dados. Nossa missão agora é fazer o _host_ se comunicar com o contêiner.
+
+Podemos subir um banco de dados em contêiner e tentar usá-lo como a parte persistente de nossa aplicação.
+
+**Detalhe**: a nossa aplicação não rodará em contêiner, apenas o banco de dados. O objetivo é fazer o host (aplicação local) conversar com o conteiner (banco de dados). Um pouco mais adiante faremos com que aplicação e banco de dados se comuniquem ambos estando em contêiners.
 
 
 
 
+
+
+
+
+
+
+<br>
+<br>
+
+## Volumes
+Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Agora, vamos falar sobre Volumes.
+
+Uma aplicação é basicamente dividida em interface/frontend, backend e base de dados. Queremos agora instanciar duas imagens em contêiners separados, e fazê-los se comunicarem. Podemos instanciar um contêiner de banco de dados, como vimos anteriormente, e um outro contêiner de aplicação. 
+
+
+
+
+<br>
+<br>
 
 ## Docker Compose
 O docker-compose é um outro arquivo que nos auxilia na tarefa de execução do docker. 
