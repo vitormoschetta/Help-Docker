@@ -18,11 +18,11 @@ docker images
 
 #### Criar um Container a partir da Imagem:
 ```
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Brasil2021*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
 ```
--p 1433:1433 --> é usado para mapear a porta do docker para o _host_(externo ao docker)  
+-p 1433:1433 --> é usado para mapear a porta do container para o _host_(máquina local).  
 
-SA_PASSWORD=Brasil2021* --> definir a senha 
+SA_PASSWORD=Brasil2021* --> definir a senha.
 
 <br>
 
