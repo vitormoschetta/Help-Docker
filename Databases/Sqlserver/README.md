@@ -33,6 +33,14 @@ Explicação dos parâmetros:
 
 <br>
 
+Se tudo ocorreu como gostaríamos, você poderá acessar o Banco de Dados Sql Server através dos seguintes atributos:
+```
+Host: localhost
+Port: 1433
+User: sa
+Password: Password123*
+``` 
+
 
 #### Consultar Containers em execução:
 ```
@@ -60,5 +68,4 @@ docker start <container_id or container_name>
 ```
 docker stop <container_id or container_name>
 ```
-
 
