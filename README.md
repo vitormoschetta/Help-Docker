@@ -1,5 +1,7 @@
 # Help-Docker
 
+## Imagem
+
 #### Informações sobre o docker instalado:
 ```
 docker info
@@ -30,6 +32,13 @@ docker rmi <id/nome imagem>
 ```
 > Se houver algum container usando essa imagem, mesmo que parado, não será possível excluí-la.
 
+
+#### Criar a própria imagem:
+Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
+[Neste ]https://github.com/vitormoschetta/Help-Docker/NETCore/) diretório
+
+<br>
+<br>
 
 
 
