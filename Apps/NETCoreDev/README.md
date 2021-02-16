@@ -152,4 +152,4 @@ Explicação dos parâmetros:
 <br>
 
 
-#### Nesta abordagem podemos incluir muitos outros comandos no Dockerfile. Podemos inclusive rodar testes.
+###### Nesta abordagem podemos incluir muitos outros comandos no Dockerfile. Podemos inclusive rodar testes.
