@@ -21,10 +21,14 @@ Podemos, também, criar as nossas próprias imagens.
 
 Abaixo, alguns comandos básicos:
 
+<br>
+
 #### Consultar imagens existentes no host (máquina local):
 ```
 docker images
 ```
+
+<br>
 
 #### Baixar uma nova imagem
 O comando abaixo busca no Docker Hub uma imagem com o nome informado:
@@ -32,12 +36,15 @@ O comando abaixo busca no Docker Hub uma imagem com o nome informado:
 docker pull <image_name>
 ```
 
+<br>
+
 #### Excluir imagem:
 ```
 docker rmi <image_id or image_name>
 ```
 Se houver algum container usando a imagem, será necessário primeiro excluir esse container.
 
+<br>
 
 #### Criar a própria imagem:
 Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
