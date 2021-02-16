@@ -154,10 +154,3 @@ Explicação dos parâmetros:
 "-d netcoreapp" o nome da imagem que usaremos pra montar o container.
 ```
 
-
-
-<br>
-<br>
-
-
-###### Nesta abordagem podemos incluir muitos outros comandos no Dockerfile. Podemos inclusive rodar testes.
