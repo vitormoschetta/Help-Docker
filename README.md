@@ -1,7 +1,9 @@
-# Help-Docker
+# Introdução comandos e funcionalidades Docker
 
+Obs: Não abordaremos instação do Docker.
 
-## Imagem
+<br>
+<br>
 
 #### Informações sobre o docker instalado:
 ```
@@ -9,32 +11,39 @@ docker info
 docker version
 ```
 
-#### Consultar imagens existentes no host:
+<br>
+<br>
+
+
+## Imagens Docker
+
+Uma imagem pode ser baixada do Hub (repositório online do Docker). Existem centenas de milhares de imagens disponíveis.
+
+Podemos, também, criar as nossas próprias imagens.  
+
+Abaixo, alguns comandos básicos:
+
+#### Consultar imagens existentes no host (máquina local):
 ```
 docker images
 ```
 
-#### Baixar uma nova imagem:
+#### Baixar uma nova imagem
+O comando abaixo busca no Docker Hub uma imagem com o nome informado:
 ```
-docker pull <imagem>
+docker pull <image_name>
 ```
-
-#### Iniciar uma instância do container através de uma imagem:
-```
-docker run <imagem>
-```
-**Detalhe**: Se a imagem não for encontrada o Docker tentará baixar do _Hub_.
-
 
 #### Excluir imagem:
 ```
-docker rmi <id/nome imagem>
+docker rmi <image_id or image_name>
 ```
-> Se houver algum container usando essa imagem, mesmo que parado, não será possível excluí-la.
+Se houver algum container usando a imagem, será necessário primeiro excluir esse container.
 
 
 #### Criar a própria imagem:
 Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
+
 [Neste ]https://github.com/vitormoschetta/Help-Docker/NETCore/) diretório
 
 <br>
