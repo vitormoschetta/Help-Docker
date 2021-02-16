@@ -22,7 +22,7 @@ A diferença básica é que o app de produção precisa apenas do tempo de execu
 
 <br>
 
-#### Mais detalhes nos seguintes diretórios
+#### Mais detalhes nos subdiretórios:
 
 [NETCoreDev](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps/NETCoreDev)
 
