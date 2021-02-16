@@ -18,7 +18,7 @@ docker images
 docker pull <imagem>
 ```
 
-#### Executar uma imagem:
+#### Iniciar uma instância do container através de uma imagem:
 ```
 docker run <imagem>
 ```
@@ -72,6 +72,21 @@ docker container rm <container ID>
 docker inspect <id container/imagem>
 ```
 
+<br>
+<br>
+
+### Instalar uma interface para o Docker no Linux
+```
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+```
+Depois de executado o comando acima, é só acessar a url abaixo e definir sua senha.      
+<http://localhost:9000>  
+
+<br>
+<br>
+
+
+### Saiba como inicializar Containers do Docker nos demais repositórios.
 
 <br>
 <br>

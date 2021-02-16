@@ -3,7 +3,7 @@
 #### Baixar imagem:
 
 ```
-docker pull docker pull mcr.microsoft.com/mssql/server:2019-latest
+docker pull mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 <br>
@@ -20,7 +20,7 @@ docker images
 
 #### Criar um Container a partir da Imagem:
 ```
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Brasil2021*" -p 1433:1433 --name sql1 -h sql1  -d mcr.microsoft.com/mssql/server:2019-latest
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Brasil2021*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 > -p 1433:1433 --> é usado para mapear a porta do docker para o _host_(externo ao docker)  
 
