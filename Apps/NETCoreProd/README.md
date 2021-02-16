@@ -47,6 +47,7 @@ ENTRYPOINT ["dotnet", "api.dll"]
 
 <br>
 
+##### Observação
 A imagem mantém os arquivos estáticos e as instruções necessárias para que ao ser instanciada em um contêiner, todo o ambiente esteja preparado para a execução do serviço/aplicação.
 
 
@@ -77,9 +78,10 @@ Explicação dos parâmetros:
 "-t netcoreapp" é o nome dado a imagem
 ```
 
-<br>
-<br>
 
+
+<br>
+<br>
 
 ## Registrando o container
 ```
