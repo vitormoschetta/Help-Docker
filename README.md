@@ -17,7 +17,10 @@ docker version
 
 Uma imagem pode ser baixada do Hub (repositório online do Docker). Existem centenas de milhares de imagens disponíveis.
 
-Podemos, também, criar as nossas próprias imagens.  
+Podemos, também, criar as nossas próprias imagens. Veremos isso mais a diante. 
+
+<br>
+<br>
 
 Abaixo, alguns comandos básicos:
 
