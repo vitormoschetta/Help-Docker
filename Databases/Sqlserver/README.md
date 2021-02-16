@@ -18,7 +18,7 @@ docker images
 
 #### Criar um Container a partir da Imagem:
 ```
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
+docker run -e "ACCEPT_EULA=Y" --name sqlserver  -p 1433:1433 -e "SA_PASSWORD=Pass123*" -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 Explicação dos parâmetros: 
@@ -28,7 +28,9 @@ Explicação dos parâmetros:
 
 "-p 1433:1433" é usado para mapear a porta 1433 do container para 1433 do _host_(máquina local).  
 
-"SA_PASSWORD=Password123* é a senha definida para o usuário SA (admin).
+"-e SA_PASSWORD=Pass123*" é a senha definida para o usuário SA (admin).
+
+"-d mcr.microsoft.com/mssql/server:2019-latest" a imagem utilizada para criar o container.
 ```
 
 <br>
@@ -38,12 +40,12 @@ Se tudo ocorreu como gostaríamos, você poderá acessar o Banco de Dados Sql Se
 Host: localhost
 Port: 1433
 User: sa
-Password: Password123*
+Password: Pass123*
 ``` 
 
 Sua string de conexão ficaria parecido com isso:
 ```
-"Server=localhost,1433;Database=database_name;user=sa;password=Password123*"; 
+"Server=localhost,1433;Database=database_name;user=sa;password=Pass123*"; 
 ```
 Obs: "localhost" pode ser substituído pelo IP da máquina.
 
