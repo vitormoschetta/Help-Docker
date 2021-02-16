@@ -49,8 +49,7 @@ Se houver algum container usando a imagem, será necessário primeiro excluir es
 #### Criar a própria imagem:
 Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
 
-No diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps) abordaremos isso.
-
+Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
 
 
 
