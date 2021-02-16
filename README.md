@@ -139,7 +139,8 @@ Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docke
 
 
 ## Docker Compose
-O docker-compose é um outro arquivo que nos auxilia na tarefa de execução do docker. Através e scripts específicos podemos facilitar o download de imagens, definir configurações e inicializar containers.
+O docker-compose é um outro arquivo que nos auxilia na tarefa de execução do docker. 
+Ele usa o formato de arquivo YAML com metadados para definir e executar aplicativos de vários contêineres.
 
 Abordamos isso no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
 
