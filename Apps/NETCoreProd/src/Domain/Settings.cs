@@ -4,11 +4,7 @@ namespace Domain
     {
         public static string ConnectionString()
         {
-            // Aqui vai a String de Conexão com o Banco de Dados
-            // No nosso caso estamos usando SQLite que vai ser gerado fora dos projetos, na pasta raiz
-            return "Server=localhost,1433;Database=Backend;user=sa;password=Bionexo2680*";  
-
-            // return "sqlserver";  
+            return "Server=localhost,1433;Database=Backend;user=sa;password=Pass123*";  
         }
     }
 }

@@ -138,20 +138,36 @@ Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docke
 
 
 
-
-
-<br>
 <br>
 <br>
 
 ## Host e Container
-Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Subimos um conteiner de aplicação e também subimos contêires de banco de dados. Nossa missão agora é fazer o _host_ se comunicar com o contêiner.
+Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Subimos um conteiner de aplicação e também subimos contêires de banco de dados. 
 
-Podemos subir um banco de dados em contêiner e tentar usá-lo como a parte persistente de nossa aplicação.
+Podemos subir um banco de dados em contêiner e acessá-lo pela nossa aplicação em **_host_** usando os seguintes parâmetros do conteiner MySql, por exemplo:
 
-**Detalhe**: a nossa aplicação não rodará em contêiner, apenas o banco de dados. O objetivo é fazer o host (aplicação local) conversar com o conteiner (banco de dados). Um pouco mais adiante faremos com que aplicação e banco de dados se comuniquem ambos estando em contêiners.
+```
+Host: localhost
+Port: 3306
+User: root
+Password: Pass123*
+``` 
+String de conexão: 
+```
+"Server=localhost;Port=3306;Database=database_name;Uid=root;Pwd=Pass123*;"
+``` 
+
+**Detalhe**: a nossa aplicação não rodará em contêiner, apenas o banco de dados. Uma vez que mapeamos a porta do conteiner e do _host_ isso fica fácil de fazer. 
 
 
+
+
+
+<br>
+<br>
+
+## Comunicação entre Conteiners
+Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicarem.
 
 
 
