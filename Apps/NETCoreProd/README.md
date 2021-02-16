@@ -10,36 +10,41 @@ COPY src/Api/bin/Release/netcoreapp3.1/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
-Estas são as instruções que ficarão contidas na imagem ao ser criada, e que também serão repassadas ao contêiner quando esta imagem for instanciada.
+Estas são as instruções que ficarão contidas na imagem ao ser criada, e que também serão repassadas ao contêiner quando a imagem for instanciada.
 
 <br>
 
 #### Explicando cada linha:
+
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 ``` 
-Informa a imagem base ser utilizada/baixada.
+Informa a "imagem base" ser utilizada/baixada.
+
 
 <br>
-
-Informa que o coCopia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/publish/" do _host_ para dentro do diretório "App/" da imagem que está sendo criada:
 ```
 COPY src/Api/bin/Release/netcoreapp3.1/publish/ App/
 ``` 
+Copia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/publish/" do _host_ para dentro do diretório "App/" da imagem que será criada.
+
 
 <br>
-
-Move o console para o diretório "/App" da imagagem
 ```
 WORKDIR /App
 ``` 
+Move o console para o diretório "/App" da imagagem
+
 
 <br>
-
 Aplica o comando "dotnet" sobre o arquivo "api.dll"
 ```
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
+
+<br>
+A imagem mantém os arquivos estáticos e as instruções necessárias para que ao ser instanciada em um contêiner, todo o ambiente esteja preparado para a execução do serviço/aplicação.
+
 
 <br>
 <br>
