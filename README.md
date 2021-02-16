@@ -141,7 +141,7 @@ Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docke
 <br>
 <br>
 
-## Host e Container
+#### Host e Container
 Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Subimos um conteiner de aplicação e também subimos contêires de banco de dados. 
 
 Podemos subir um banco de dados em contêiner e acessá-lo pela nossa aplicação em **_host_** usando os seguintes parâmetros do conteiner MySql, por exemplo:
