@@ -13,6 +13,8 @@ Veremos também como expor a porta do container ao host (márquina local) para q
 
 [PostgreSQL](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Postgres)
 
+[MySql](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Mysql)
+
 
 
 
