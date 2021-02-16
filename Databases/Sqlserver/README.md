@@ -45,6 +45,7 @@ Sua string de conexão ficaria parecido com isso:
 ```
 "Server=localhost,1433;Database=database_name;user=sa;password=Password123*"; 
 ```
+Obs: "localhost" pode ser substituído pelo IP da máquina.
 
 
 #### Consultar Containers em execução:
