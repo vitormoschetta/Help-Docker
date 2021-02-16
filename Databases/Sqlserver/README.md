@@ -1,4 +1,4 @@
-## Rodar BD SqlServer local com Docker
+## Rodar BD MS Sql Server local com Docker
 
 #### Baixar imagem:
 
