@@ -19,3 +19,11 @@ NETCoreDev cria uma imagem de uma aplicação .NET Core para desenvolvimento e N
 
 A diferença básica é que o app de produção precisa apenas do tempo de execução, ou seja, uma biblioteca para rodar as libs .dll. Já o app de desenvolvimento precisa de todo o SDK, ou seja, o pacote que contém as ferramentas de desenvolvimento e linha de comandos.
 
+
+<br>
+
+#### Mais detalhes nos seguintes diretórios
+
+[NETCoreDev](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps/NETCoreDev)
+
+[NETCoreProd](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps/NETCoreProd)
