@@ -128,7 +128,7 @@ Explicação dos parâmetros:
 ```
 "-t netcoreapp" é o nome dado a imagem
 
-"-f Dockerfile.dev ." define o Dockerfile a ser executado
+"-f Dockerfile.dev ." informa ao Docker o nome do arquivo Dockerfile a ser procurado
 ```
 
 

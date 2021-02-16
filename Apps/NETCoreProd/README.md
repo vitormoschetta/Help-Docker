@@ -78,6 +78,7 @@ docker build -t netcoreapp .
 Explicação dos parâmetros:
 ```
 "-t netcoreapp" é o nome dado a imagem
+"." o ponto final informa que ao Docker que deve procurar o arquivo Dockerfileno diretório atual.
 ```
 
 
