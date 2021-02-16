@@ -51,59 +51,93 @@ Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.
 
 Saia mais [neste](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps) diretório.
 
+
+
+
 <br>
 <br>
 
 
+
+
+## Containers Docker
+O Container é um ambiente isolado que simula uma máquina virtual. Ele possui sua própria rede, host e portas.
+
+Abaixo alguns comandos básicos:
+
+<br>
 
 #### Consultar containers em execução:
 ```
 docker ps 
 ```
 
+<br>
+
 #### Consultar containers parados:
 ```
 docker ps -a
 ```
 
+<br>
+
 #### Startar um container:
 ```
-docker start <id container>
+docker start <container_id or container_name>
 ```
+
+<br>
 
 #### Parar um container:
 ```
-docker stop <id container>
+docker stop <container_id or container_name>
 ```
+
+<br>
 
 #### Excluir um container:
 ```
-docker container rm <container ID>
+docker container rm <container_id or container_name>
 ```
+
+<br>
+
 
 #### Detalhes sobre container ou imagem:
 ```
-docker inspect <id container/imagem>
+docker inspect <container_id or container_name>
 ```
 
+
+
 <br>
 <br>
 
-### Instalar uma interface para o Docker no Linux
+
+
+
+## Docker Compose
+O docker-compose é um outro arquivo que nos auxilia na tarefa de execução do docker. Através e scripts específicos podemos facilitar o download de imagens, definir configurações e inicializar containers.
+
+
+
+
+<br>
+<br>
+
+
+
+
+## Interface Docker no Linux
+Executaremos aqui um container que gerencia a instancia do docker na máquina local. Ou seja, através dessa interface podemos identifiar as imagens, containers, volumes, etc.. que estamos trabalhando.
+
+Executar o container:
 ```
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
 Depois de executado o comando acima, é só acessar a url abaixo e definir sua senha.      
+
 <http://localhost:9000>  
 
-<br>
-<br>
 
 
-### Saiba como inicializar Containers do Docker nos demais repositórios.
-
-<br>
-<br>
-
-#### Referências
-<https://medium.com/xp-inc/principais-comandos-docker-f9b02e6944cd>
