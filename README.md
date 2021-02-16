@@ -20,7 +20,6 @@ Uma imagem pode ser baixada do Hub (repositório online do Docker). Existem cent
 Podemos, também, criar as nossas próprias imagens. Veremos isso mais a diante. 
 
 <br>
-<br>
 
 Abaixo, alguns comandos básicos:
 
