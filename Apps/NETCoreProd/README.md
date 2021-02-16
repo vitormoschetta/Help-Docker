@@ -23,6 +23,7 @@ Informa a "imagem base" ser utilizada/baixada.
 
 
 <br>
+
 ```
 COPY src/Api/bin/Release/netcoreapp3.1/publish/ App/
 ``` 
@@ -30,6 +31,7 @@ Copia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/p
 
 
 <br>
+
 ```
 WORKDIR /App
 ``` 
@@ -37,13 +39,17 @@ Move o console para o diretório "/App" da imagagem
 
 
 <br>
+
 Aplica o comando "dotnet" sobre o arquivo "api.dll"
 ```
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
 
 <br>
+
 A imagem mantém os arquivos estáticos e as instruções necessárias para que ao ser instanciada em um contêiner, todo o ambiente esteja preparado para a execução do serviço/aplicação.
+
+
 
 
 <br>
@@ -56,9 +62,10 @@ Em momento algum executamos um _build_ ou um _publish_, pois estamos pegando os 
 dotnet publish -c Release
 ```
 
-<br>
-<br>
 
+
+<br>
+<br>
 
 ## Gerando a imagem
 ```
