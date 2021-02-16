@@ -53,27 +53,6 @@ Se houver algum container usando a imagem, será necessário primeiro excluir es
 
 
 
-## Mão na massa
-
-#### Utilizando imagem existente
-Vamos utilizar imagens de bancos de dados conhecidos para instanciar containers.
-
-Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases).
-
-<br>
-
-#### Criar a própria imagem
-Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
-
-Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
-
-
-
-<br>
-<br>
-
-
-
 
 ## Containers Docker
 O Container é um ambiente isolado que simula uma máquina virtual. Ele possui sua própria rede, host e portas.
@@ -127,6 +106,30 @@ docker inspect <container_id or container_name>
 
 <br>
 <br>
+
+
+
+## Mão na massa
+
+#### Utilizando imagem existente
+Vamos utilizar imagens de bancos de dados conhecidos para instanciar containers.
+
+Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases).
+
+<br>
+
+#### Criar a própria imagem
+Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
+
+Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
+
+
+
+
+<br>
+<br>
+
+
 
 
 
