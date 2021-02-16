@@ -55,7 +55,7 @@ Se houver algum container usando a imagem, será necessário primeiro excluir es
 
 
 ## Containers Docker
-O Container é um ambiente isolado que simula uma máquina virtual. Ele possui sua própria rede, host e portas.
+Container é uma instância de uma imagem determinada imagem. Ele fica em um ambiente isolado no Sistema Operacional, onde possui sua própria rede, host e portas.
 
 Abaixo alguns comandos básicos:
 
