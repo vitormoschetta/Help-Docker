@@ -12,7 +12,6 @@ docker version
 ```
 
 <br>
-<br>
 
 
 ## Imagens Docker
