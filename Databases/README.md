@@ -9,9 +9,9 @@ Veremos também como expor a porta do container ao host (márquina local) para q
 
 ### Bancos utilizados:
 
-[Sql Server](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Sqlserver).
+[Sql Server](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Sqlserver)
 
-[PostgreSQL](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Postgres).
+[PostgreSQL](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Postgres)
 
 
 
