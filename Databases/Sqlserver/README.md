@@ -21,7 +21,7 @@ docker images
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 
-Explicação dos parâmetros abaixo: 
+Explicação dos parâmetros: 
 
 ```
 "--name sqlserver" é o nome do container que definimos.
@@ -34,27 +34,31 @@ Explicação dos parâmetros abaixo:
 <br>
 
 
-#### Consultar Container:
+#### Consultar Containers em execução:
 ```
-docker ps -a
+docker ps 
 ```
-Perceba que o container está parado, status = 'Exited'
 
 <br>
 
+#### Consultar Containers parados:
+```
+docker ps -a
+```
 
-#### Inicializar o Container:
+<br>
+
+#### Inicializar Container:
 ```
-docker start <container id>
+docker start <container_id or container_name>
 ```
-O ID do container é identificado no passo anterior. 
 
 <br>
 
 
 #### Parar o Container:
 ```
-docker stop <container id>
+docker stop <container_id or container_name>
 ```
 
-<br>
+
