@@ -48,7 +48,7 @@ docker pull <image_name>
 ```
 docker rmi <image_id or image_name>
 ```
-Se houver algum container usando a imagem, será necessário primeiro excluir esse container.
+Se houver algum container usando a imagem, será necessário primeiro excluir o container.
 
 
 
@@ -59,7 +59,7 @@ Se houver algum container usando a imagem, será necessário primeiro excluir es
 
 
 ## Containers Docker
-Container é uma instância de uma imagem determinada imagem. Ele fica em um ambiente isolado no Sistema Operacional, onde possui sua própria rede, host e portas.
+Container é uma instância de uma determinada imagem. Ele fica em um ambiente isolado no Sistema Operacional, onde possui sua própria rede, host e portas.
 
 Abaixo alguns comandos básicos:
 
