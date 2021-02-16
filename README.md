@@ -3,7 +3,6 @@
 Obs: Não abordaremos instação do Docker.
 
 <br>
-<br>
 
 #### Informações sobre o docker instalado:
 ```
