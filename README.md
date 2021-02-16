@@ -46,9 +46,23 @@ docker rmi <image_id or image_name>
 ```
 Se houver algum container usando a imagem, será necessário primeiro excluir esse container.
 
+
+
+<br>
 <br>
 
-#### Criar a própria imagem:
+
+
+## Mão na massa
+
+#### Utilizando imagem existente
+Vamos utilizar imagens de bancos de dados conhecidos para instanciar containers.
+
+Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases).
+
+<br>
+
+#### Criar a própria imagem
 Para criar uma imagem precisamos definir um arquivo chamado 'Dockerfile'.  
 
 Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps).
