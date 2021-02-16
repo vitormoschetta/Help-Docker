@@ -12,6 +12,7 @@ ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
 Estas são as instruções que ficarão contidas na imagem ao ser criada, e que também serão repassadas ao contêiner quando a imagem for instanciada.
 
+
 <br>
 
 #### Explicando cada linha:
@@ -35,7 +36,7 @@ Copia os arquivos localizados no diretório "src/Api/bin/Release/netcoreapp3.1/p
 ```
 WORKDIR /App
 ``` 
-Move o console para o diretório "/App" da imagagem
+Move o console para o diretório "/App" da imagem
 
 
 <br>

@@ -31,17 +31,22 @@ COPY --from=build /App/Api/out ./
 ENTRYPOINT ["dotnet", "api.dll"]
 ``` 
 
-#### Explicando cada linha:
+Estas são as instruções que ficarão contidas na imagem ao ser criada, e que também serão repassadas ao contêiner quando a imagem for instanciada.
 
-Informa a lib/biblioteca a ser utilizada:
-```
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-``` 
-Veja que aqui informamos que queremos usar o SDK, ou seja, toda a ferramenta de desenvolvimento e linha de comandos.
 
 <br>
 
-Copia os arquivos .sln e .csproj localizados no diretório "src/..." do host para dentro do diretório "App/..." da imagem que está sendo criada:
+#### Explicando cada linha:
+```
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+``` 
+Informa a "imagem base" ser utilizada/baixada.
+
+Veja que aqui informamos que queremos usar o SDK, ou seja, toda a ferramenta de desenvolvimento e linha de comandos.
+
+
+<br>
+
 ```
 COPY src/*.sln App/
 COPY src/Domain/*.csproj App/Domain/
@@ -49,41 +54,40 @@ COPY src/Infra/*.csproj App/Infra/
 COPY src/Tests/*.csproj App/Tests/
 COPY src/Api/*.csproj App/Api/
 ``` 
+
+Copia os arquivos .sln e .csproj localizados no diretório "src/..." do host para dentro do diretório "App/..." da imagem que está sendo criada.
+
 Observe que copiamos apenas os arquivos necessários para restaurar o projeto na imagem.
+
 
 <br>
 
-Restaurar as dependências do projeto. Ou seja, baixar os pacotes necessários para executar a aplicação no container posteriormente através desta imagem.
 ```
 WORKDIR /App
 RUN dotnet restore
 ``` 
+Restaura as dependências do projeto. Ou seja, baixar os pacotes necessários para executar a aplicação no container posteriormente através desta imagem.
+
 
 <br>
 
-Copiar todos os arquivos do host para as pastas correspondentes na imagem:
 ```
 COPY src/Api/. ./Api/
 COPY src/Domain/. ./Domain/
 COPY src/Infra/. ./Infra/
 COPY src/Tests/. ./Tests/
 ``` 
+Copia todos os arquivos do _host_ para as pastas correspondentes na imagem:
+
 
 <br>
 
-Publicar arquivos .dll:
 ```
 WORKDIR /App/Api
 RUN dotnet publish -c Release -o out
 ``` 
+Publica arquivos .dll no diretorio "/App/Api/out" da imagem.
 
-<br>
-
-Publicar arquivos .dll no diretorio "/App/Api/out" da imagem:
-```
-WORKDIR /App/Api
-RUN dotnet publish -c Release -o out
-``` 
 
 <br>
 
@@ -92,26 +96,28 @@ Baixa a lib/bibliotca de tempo de execução do .NET Core. Ela é responsável p
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 ```
 
+
 <br>
 
-Move o console para a pasta "App" da imagem:
 ```
 WORKDIR /App
 COPY --from=build /App/Api/out ./
 ```
+Move o console para a pasta "App" da imagem
+
 
 <br>
 
-O comando que define o que será executado e será mantido vivo:
 ```
 ENTRYPOINT ["dotnet", "api.dll"]
 ```
+Define o que será mantido em execução ao instanciar a imagem em um contêiner.
+
+
 
 
 <br>
 <br>
-
-
 
 ## Gerando a imagem
 ```
@@ -125,9 +131,11 @@ Explicação dos parâmetros:
 "-f Dockerfile.dev ." define o Dockerfile a ser executado
 ```
 
-<br>
-<br>
 
+
+
+<br>
+<br>
 
 ## Registrando o container
 ```
