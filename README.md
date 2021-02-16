@@ -121,6 +121,59 @@ docker inspect <container_id or container_name>
 <br>
 <br>
 
+## Volumes Docker
+Embora os contêineres possam criar, atualizar e excluir arquivos, essas alterações são perdidas quando o contêiner é removido. Com volumes, podemos mudar tudo isso.
+
+Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
+
+
+Abaixo alguns comandos básicos:
+
+<br>
+
+#### Consultar volumes:
+```
+docker volume ls
+```
+
+
+
+<br>
+<br>
+
+### Docker Prune 
+Server para excluir recursos não utilizados. 
+
+#### Remove todos os recursos docker não utilizados (container, images, volumes, etc):
+```
+docker system prune 
+```
+
+<br>
+
+#### Remove apenas volumes não utilizados:
+```
+docker volume prune
+```
+
+<br>
+
+#### Remove apenas imagens não utilizadas:
+```
+docker image prune 
+```
+
+<br>
+
+#### Remove apenas conteiners não utilizados:
+```
+docker conteiner prune 
+```
+
+
+<br>
+<br>
+
 ## Mão na massa
 
 #### Utilizando imagem existente
@@ -165,9 +218,7 @@ String de conexão:
 <br>
 
 ## Comunicação entre Conteiners
-Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicarem.
-
-
+Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicar.
 
 
 
@@ -178,9 +229,13 @@ Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e
 <br>
 
 ## Volumes
-Já aprendemos o que é uma imagem e um contêiner. Aprendemos a usar imagens prontas e a criar nossas próprias imagens a partir de imagens "base". Agora, vamos falar sobre Volumes.
+Embora os contêineres possam criar, atualizar e excluir arquivos, essas alterações são perdidas quando o contêiner é removido. Com volumes, podemos mudar tudo isso.
 
-Uma aplicação é basicamente dividida em interface/frontend, backend e base de dados. Queremos agora instanciar duas imagens em contêiners separados, e fazê-los se comunicarem. Podemos instanciar um contêiner de banco de dados, como vimos anteriormente, e um outro contêiner de aplicação. 
+Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
+
+
+
+
 
 
 
@@ -195,11 +250,13 @@ Ele usa o formato de arquivo YAML com metadados para definir e executar aplicati
 Abordamos isso no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
 
 
+
+
+
+
+
 <br>
 <br>
-
-
-
 
 ## Interface Docker no Linux
 Executaremos aqui um container que gerencia a instancia do docker na máquina local. Ou seja, através dessa interface podemos identifiar as imagens, containers, volumes, etc.. que estamos trabalhando.
@@ -221,4 +278,7 @@ Depois de executado o comando acima, é só acessar a url abaixo e definir sua s
 <br>
 
 ### Referências:
+
+<https://docs.docker.com/get-started/>  
+
 <https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-terminology>
