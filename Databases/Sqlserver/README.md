@@ -20,11 +20,16 @@ docker images
 ```
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Password123*" -p 1433:1433 --name sqlserver -h sqlserver  -d mcr.microsoft.com/mssql/server:2019-latest
 ```
-    "--name sqlserver" é o nome do container que definimos.
 
-    "-p 1433:1433" é usado para mapear a porta 1433 do container para 1433 do _host_(máquina local).  
+Explicação dos parâmetros abaixo: 
 
-    "SA_PASSWORD=Password123* é a senha definida para o usuário SA (admin).
+```
+"--name sqlserver" é o nome do container que definimos.
+
+"-p 1433:1433" é usado para mapear a porta 1433 do container para 1433 do _host_(máquina local).  
+
+"SA_PASSWORD=Password123* é a senha definida para o usuário SA (admin).
+```
 
 <br>
 
