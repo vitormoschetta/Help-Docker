@@ -41,3 +41,9 @@ Obs: 'sqlserver' foi o nome que colocamos de '--network-alias'
 
 O IP será mostrado na tela na seção 'ANSWER SECTION'. É algo como 172.21.0.2
 
+
+
+#### Criar um conteiner App .NET Core conectando na mesma rede 
+``` 
+docker run -d -p 8080:80 --name app --network internal -d netcoreapp 
+```
