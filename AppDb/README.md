@@ -69,7 +69,7 @@ Se tudo ocorreu conforme esperávamos você poderá acessar sua aplicação na u
 
 Agora, não só irá acessar a documentação da API como poderá efetuar os _requests_, pois a comunicação entre o App e o BD está ocorrendo. 
 
-Há ainda uma outra observação: nosso servidor MS SQL foi instanciado, porém, ainda não temos o banco de dados e a tabela necessária para efetuarmos o _request_ com sucesso.
+Há ainda uma outra observação: nosso servidor MS SQL foi instanciado, porém, **ainda não temos o banco de dados e a tabela** necessária para efetuarmos o _request_ com sucesso.
 
 
 #### Criar BD  e Tabela
