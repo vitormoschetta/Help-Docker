@@ -154,3 +154,9 @@ Explicação dos parâmetros:
 "-d netcoreapp" o nome da imagem que usaremos para instanciar o container.
 ```
 
+
+<br>
+
+Se tudo ocorreu como esperávamos você poderá acessar o app pela url abaixo:
+
+<http://localhost:5000/index.html>
