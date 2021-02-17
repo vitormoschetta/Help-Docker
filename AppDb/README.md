@@ -5,45 +5,62 @@ Os contêineres, por padrão, são executados isoladamente e não sabem nada sob
 
 <br>
 
-#### Criar a rede
+#### Criar a network / rede
 ```
 docker network create internal
 
 ```
+É através do network que faremos os conteineres se comunicar. Se ambos estiverem vinculados à mesma rede eles podem fazer referência ao outro usando o ip da rede "internal" ou simplesmente o nome do conteiner. 
 
 
-#### Criar um conteiner MS SQL Server e conectá-lo à rede 'internal'
+<br>
+
+Bom, agora precisamos fazer o que já sabemos: 
+
+1. Ter o código fonte do App.
+2. Criar um Dockerfile parar gerar a imagem do App.
+3. Executar o comando que gera a imagem do App a partir do Dockerfile.
+4. Instanciar um conteiner App a partir da imagem App.
+5. Instanciar um conteiner de banco de dados a partir de uma "imagem base" oficial.
+
+<br>
+
+#### Gerar a imagem do App:
+Jã temos o Dockerfile na pasta do App e o código fonte no subdiretório "src".  
+Só precisamos agora executar o comando para gerar a imagem:  
+```
+docker build -t netcoreapp .
+```
+
+
+<br>
+
+#### Instanciar o container App
+Vamos utilizar o seguinte comando para instanciar o conteiner a partir da imagem criada anteriormente:
+``` 
+docker run -d -p 8080:80 --name app --network internal -d netcoreapp 
+```
+Observe que entre os parâmetros a única coisa que não vimos até aqui é o "--network internal".   
+Este é o nome da rede em que o conteiner estará vinculado.
+
+
+<br>
+
+#### Instanciar o container Db  
+Vamos utilizar o comando abaixo para instanciar um banco de dados MS SQL Server a partir da "imagem base" oficial:
 ```
 docker run -e "ACCEPT_EULA=Y" \
 --name sqlserver \
 -p 1433:1433 \
 -e "SA_PASSWORD=Pass123*" \
--e MSSQL_DB=Backend \
---network internal --network-alias sqlserver \
--v sql-data:/var/lib/mssql \
+--network internal \
 -d mcr.microsoft.com/mssql/server:2019-latest 
-
 ```
+Novamente, observer que a única coisa diferente é o "--network internal". Ambos os containeres precisam estar na mesma network/rede para poderem se comunicar.
+
 
 <br>
 
-Obs: Antes de criarmos o conteiner para o App, precisamos saber o IP do conteiner do MS SQL Server na rede (internal) que criamos. Faremos isso usando o serviço do container Nicolaka:
-
-``` 
-docker run -it --network internal nicolaka/netshoot
-```
-
-Agora vamos identificar o IP do sqlserver na rede internal:
-``` 
-dig sqlserver
-``` 
-Obs: 'sqlserver' foi o nome que colocamos de '--network-alias'
-
-O IP será mostrado na tela na seção 'ANSWER SECTION'. É algo como 172.21.0.2
 
 
 
-#### Criar um conteiner App .NET Core conectando na mesma rede 
-``` 
-docker run -d -p 8080:80 --name app --network internal -d netcoreapp 
-```
