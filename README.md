@@ -163,7 +163,7 @@ String de conexão:
 <br>
 <br>
 
-## Comunicação entre Conteiners
+## Comunicação entre Conteineres
 Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicar.
 
 Faremos isso no diretório [AppDb](https://github.com/vitormoschetta/Help-Docker/tree/main/AppDb).
@@ -175,8 +175,10 @@ Faremos isso no diretório [AppDb](https://github.com/vitormoschetta/Help-Docker
 <br>
 
 ## Docker Compose
-O docker-compose é um outro arquivo que nos auxilia na tarefa de execução do docker. 
+O docker-compose é um outro arquivo que nos auxilia na tarefa de criação de containeres. 
 Ele usa o formato de arquivo YAML com metadados para definir e executar aplicativos de vários contêineres.
+
+Usaremos ele agora para executar de forma mais simples todo o processo que fizemos no tópico anterior (Comunicação entre conteineres).
 
 Abordamos isso no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
 
