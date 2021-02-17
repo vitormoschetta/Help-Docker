@@ -77,7 +77,7 @@ COPY src/Domain/. ./Domain/
 COPY src/Infra/. ./Infra/
 COPY src/Tests/. ./Tests/
 ``` 
-Copia todos os arquivos do _host_ para as pastas correspondentes na imagem:
+Copia todos os arquivos do _host_ para as pastas correspondentes na imagem.
 
 
 <br>
@@ -86,15 +86,15 @@ Copia todos os arquivos do _host_ para as pastas correspondentes na imagem:
 WORKDIR /App/Api
 RUN dotnet publish -c Release -o out
 ``` 
-Publica arquivos .dll no diretorio "/App/Api/out" da imagem.
+Publica arquivos _.dll_ no diretorio "/App/Api/out" da imagem.
 
 
 <br>
 
-Baixa a lib/bibliotca de tempo de execução do .NET Core. Ela é responsável por processar as .dll e manter o app em execução:
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 ```
+Informa a imagem "base" responsável pelo tempo de execução do .NET Core. Ela é responsável por processar as _.dll_ e manter o app em execução.
 
 
 <br>
