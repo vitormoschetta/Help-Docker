@@ -59,7 +59,7 @@ A imagem mantém os arquivos estáticos e as instruções necessárias para que 
 <br>
 
 ### Publicando primeiro
-Em momento algum executamos um _build_ ou um _publish_, pois estamos pegando os arquivos já em formato de _.dll_ da pasta publish do projeto .NET Core. Ou seja, antes de rodar esta imagem precisamos executar o seguinte comando na raíz da aplicação:
+Em momento algum executamos um _build_ ou um _publish_, e veja que estamos pegando os arquivos já publicados em formato _.dll_ da pasta publish do projeto .NET Core. Ou seja, antes de rodar esta imagem precisamos executar o seguinte comando na raíz da aplicação:
 
 ```
 dotnet publish -c Release
