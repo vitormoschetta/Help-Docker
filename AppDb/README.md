@@ -26,7 +26,7 @@ Bom, agora precisamos fazer o que já sabemos:
 <br>
 
 #### Gerar a imagem do App:
-Jã temos o Dockerfile na pasta do App e o código fonte no subdiretório "src".  
+Já temos o Dockerfile na pasta do App e o código fonte no subdiretório "src".  
 Só precisamos agora executar o comando para gerar a imagem:  
 ```
 docker build -t netcoreapp .
@@ -38,7 +38,7 @@ docker build -t netcoreapp .
 #### Instanciar o container App
 Vamos utilizar o seguinte comando para instanciar o conteiner a partir da imagem criada anteriormente:
 ``` 
-docker run -d -p 8080:80 --name app --network internal -d netcoreapp 
+docker run -d -p 5000:80 --name app --network internal -d netcoreapp 
 ```
 Observe que entre os parâmetros a única coisa que não vimos até aqui é o "--network internal".   
 Este é o nome da rede em que o conteiner estará vinculado.
@@ -61,6 +61,20 @@ Novamente, observer que a única coisa diferente é o "--network internal". Ambo
 
 <br>
 
+Se tudo ocorreu conforme esperávamos você poderá acessar sua aplicação na url abaixo:
 
+<http://localhost:5000/index.html>
+
+<br>
+
+Agora, não só irá acessar a documentação da API como poderá efetuar os _requests_, pois a comunicação entre o App e o BD está ocorrendo. 
+
+Se por acaso receber erro internal quando efetuar uma requisição, verifique a string de conexão. Se for usado exatamente as mesmas configurações deste tutorial, ela se parecerá com isso:
+
+```
+"Server=sqlserver;Database=Backend;user=sa;password=Pass123*"
+```
+
+Observe que o "Server" não referenciar um IP ou mesmo o localhost, mas o nome do container do banco de dados, que no nosso caso é "sqlserver".
 
 
