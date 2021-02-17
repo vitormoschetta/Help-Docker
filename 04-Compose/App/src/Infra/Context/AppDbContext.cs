@@ -14,15 +14,12 @@ namespace Infra.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(Settings.ConnectionString());
-
-            // Use SQLite
-            // options.UseSqlite(Settings.ConnectionString());
+            options.UseSqlServer(Settings.ConnectionString());            
         }
 
-        // protected override void OnModelCreating(ModelBuilder builder)
-        // {
-        //     builder.ApplyConfiguration(new ProductMap());                   
-        // }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfiguration(new ProductMap());                   
+        }
     }
 }

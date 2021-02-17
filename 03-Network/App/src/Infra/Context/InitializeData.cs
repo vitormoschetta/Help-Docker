@@ -8,6 +8,20 @@ namespace Infra.Context
 {
     public class InitializeData
     {
+
+        public static void ApplyMigrations(IServiceProvider serviceProvider) 
+        {
+            using (var context = new AppDbContext(
+                serviceProvider.GetRequiredService<DbContextOptions<AppDbContext>>()))
+            {
+                if (context.Database.GetPendingMigrations().Any()) 
+                {
+                    context.Database.Migrate();
+                }
+            }            
+        }
+
+        
         public static void InitializeProducts(IServiceProvider serviceProvider)
         {
             using (var context = new AppDbContext(

@@ -9,9 +9,6 @@ COPY src/Api/*.csproj App/Api/
 WORKDIR /App
 RUN dotnet restore
 
-RUN dotnet tool install --global dotnet-ef --version 3.1.4
-#RUN dotnet ef database update
-
 COPY src/Api/. ./Api/
 COPY src/Domain/. ./Domain/
 COPY src/Infra/. ./Infra/
