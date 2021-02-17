@@ -166,7 +166,7 @@ String de conexão:
 ## Comunicação entre Conteineres
 Nosso desafio agora é subir aplicação e banco de dados, ambos em conteiner, e fazê-los se comunicar.
 
-Faremos isso no diretório [AppDb](https://github.com/vitormoschetta/Help-Docker/tree/main/AppDb).
+Faremos isso no diretório [03-Network](https://github.com/vitormoschetta/Help-Docker/tree/main/03-Network).
 
 
 
