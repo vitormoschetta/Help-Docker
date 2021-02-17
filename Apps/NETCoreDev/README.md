@@ -55,7 +55,7 @@ COPY src/Tests/*.csproj App/Tests/
 COPY src/Api/*.csproj App/Api/
 ``` 
 
-Copia os arquivos .sln e .csproj localizados no diretório "src/..." do host para dentro do diretório "App/..." da imagem que está sendo criada.
+Copia os arquivos .sln e .csproj localizados no diretório "src/..." do _host_ para dentro do diretório "App/..." da imagem que será criada.
 
 Observe que copiamos apenas os arquivos necessários para restaurar o projeto na imagem.
 
