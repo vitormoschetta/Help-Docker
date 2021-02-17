@@ -119,5 +119,5 @@ Existe uma forma de executar todo o processo de criação dos containeres com um
 
 Faremos isso utilizando **docker-compose**.
 
-Podemos acompanhar esse tópico no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
+Podemos acompanhar esse tópico no diretório [04-Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/04-Compose).
 
