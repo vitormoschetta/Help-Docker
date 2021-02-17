@@ -78,3 +78,13 @@ Se por acaso receber erro internal quando efetuar uma requisição, verifique a 
 Observe que o "Server" não referenciar um IP ou mesmo o localhost, mas o nome do container do banco de dados, que no nosso caso é "sqlserver".
 
 
+<br>
+<br>
+
+#### Docker Compose 
+Existe uma forma de executar todo esse processo com um único comando. Sim, gerar uma imagem do App e instanciar ambos os conteineres com um só comando. 
+
+Faremos isso utilizando **docker-compose**.
+
+Podemos acompanhar esse tópico no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
+
