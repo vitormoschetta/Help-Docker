@@ -178,33 +178,3 @@ Se tudo ocorreu como esperávamos você poderá acessar a aplicação na seguint
 <http://localhost:5000/index.html>
 
 
-<br>
-
-### Banco de dados e tabela
-
-Obs: Os conteineres estão na mesma rede, porém se tentarmos efetuar um _request_ receberemos erro interno, pois o servidor sql ainda não tem o banco de dados e a tabela que precisamos. 
-
-Portanto, vamos criar um banco de dados chamado "Backend" e uma tabela chamada "Product". 
-
-Em um outro módulo iremos automatizar isso, por enquanto vamos fazer na mão. 
-
-Segue o _script_ da tabela para facilitar:
-
-``` 
-CREATE TABLE Product (
-    [Id] nvarchar(450) NOT NULL,
-    [Name] nvarchar(max) NULL,
-    [Price] decimal(18,2) NOT NULL,
-    CONSTRAINT [PK_Product] PRIMARY KEY ([Id])
-);
-
-INSERT INTO Product VALUES('1', 'PRODUCT A', 9)
-```
-
-Nossa connectionString já está configurada na camada de dominio (Domain/Settings.cs):
-```
-"Server=sqlserver;Database=Backend;user=sa;password=Pass123*"
-``` 
-
-Agora sim, volte a acessar a url informada anteriormente e efetue os _requests_.
-
