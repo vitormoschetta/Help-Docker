@@ -155,3 +155,24 @@ networks:
     internal:
         driver: bridge
 ```
+
+
+<br>
+
+### Executando o compose
+
+Use o seguinte comando para startar o docker-compose:
+``` 
+docker-compose up -d
+```
+Obs: O console precisa estar no mesmo diretório do arquivo docker-compose.yaml.
+
+<br>
+
+O compose do Docker tratará de executar todos os processos que precisamos para subir ambos os containeres na mesma rede para que possam se comunicar.
+
+<br>
+
+Se tudo ocorreu como esperávamos você poderá acessar a aplicação na seguinte url:
+
+<http://localhost:5000/index.html>
