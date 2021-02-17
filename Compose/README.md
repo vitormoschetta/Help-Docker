@@ -55,7 +55,7 @@ Perceba que o compose define dois serviços: app e db.
 
 Vamos explicar por partes:
 
-##### Serviço app:
+#### Serviço app:
 
 ```
 container_name: app
@@ -103,7 +103,7 @@ Informa ao Docker que o serviço "app" depende do sucesso da implantação do se
 
 <br>
 
-##### Serviço db:
+#### Serviço db:
 
 ```
 container_name: sqlserver
@@ -155,7 +155,7 @@ Informa ao Docker que o serviço "app" depende do sucesso da implantação do se
 
 <br>
 
-##### Network
+#### Network
 Para que haja comunicação entre os conteiners (app e db/sqlserver) é preciso definir uma network/rede comum entre eles. Por isso ambos implementam a network "internal". 
 
 No fim do arquivo docker-compose informamos a criação dessa rede:
