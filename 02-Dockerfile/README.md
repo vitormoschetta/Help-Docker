@@ -25,7 +25,7 @@ Já o app de desenvolvimento precisa de todo o SDK, ou seja, o pacote que conté
 
 #### Mais detalhes nos subdiretórios:
 
-[NETCoreProd](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps/NETCoreProd)
+[NETCoreProd](https://github.com/vitormoschetta/Help-Docker/tree/main/02-Dockerfile/NETCoreProd)
 
-[NETCoreDev](https://github.com/vitormoschetta/Help-Docker/tree/main/Apps/NETCoreDev)
+[NETCoreDev](https://github.com/vitormoschetta/Help-Docker/tree/main/02-Dockerfile/NETCoreDev)
 
