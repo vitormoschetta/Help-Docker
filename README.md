@@ -125,7 +125,7 @@ docker inspect <container_id or container_name>
 #### Utilizando imagem existente
 Vamos utilizar imagens de bancos de dados conhecidos para instanciar containers.
 
-Abordamos isso no diretório [Databases](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases).
+Abordamos isso no diretório [01-Base](https://github.com/vitormoschetta/Help-Docker/tree/main/01-Base).
 
 
 <br>
