@@ -114,7 +114,7 @@ Agora sim, acesse a url e efetue os _requests_.
 <br>
 <br>
 
-#### Docker Compose 
+### Docker Compose 
 Existe uma forma de executar todo o processo de criação dos containeres com um único comando. Sim, gerar uma imagem do App e instanciar ambos os conteineres com um só comando. 
 
 Faremos isso utilizando **docker-compose**.
