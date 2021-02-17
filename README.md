@@ -133,7 +133,7 @@ Abordamos isso no diretório [01-Base](https://github.com/vitormoschetta/Help-Do
 #### Criar a própria imagem
 Para criar a própria imagem precisamos definir um arquivo chamado 'Dockerfile'.  
 
-Abordamos isso no diretório [Apps](https://github.com/vitormoschetta/Help-Docker/tree/main/02-Dockerfile).
+Abordamos isso no diretório [02-Dockerfile](https://github.com/vitormoschetta/Help-Docker/tree/main/02-Dockerfile).
 
 
 <br>
