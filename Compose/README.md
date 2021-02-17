@@ -177,6 +177,11 @@ Se tudo ocorreu como esperávamos você poderá acessar a aplicação na seguint
 
 <http://localhost:5000/index.html>
 
+
+<br>
+
+### Banco de dados e tabela
+
 Obs: Os conteineres estão na mesma rede, porém se tentarmos efetuar um _request_ receberemos erro interno, pois o servidor sql ainda não tem o banco de dados e a tabela que precisamos. 
 
 Portanto, vamos criar um banco de dados chamado "Backend" e uma tabela chamada "Product". 
