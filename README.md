@@ -192,13 +192,18 @@ Abordamos isso no diretório [Compose](https://github.com/vitormoschetta/Help-Do
 <br>
 
 ## Interface Docker no Linux
-Executaremos aqui um container que gerencia a instancia do docker na máquina local. Ou seja, através dessa interface podemos identifiar as imagens, containers, volumes, etc.. que estamos trabalhando.
+Até agora fizemos tudo utilizando o Docker CLI, a linha de comando do Docker. 
+
+Existem porém algumas bibliotecas de UI para facilitar a visualização e o gerenciamento de containeres. Uma delas é o **portainer**. 
+
+O portainer nada mais é do que uma imagem que instanciaremos em um conteiner, na porta 9000, que será responsável por gerar a parte visual e gerenciável do Docker.
 
 Executar o container:
 ```
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
-Depois de executado o comando acima, é só acessar a url abaixo e definir sua senha.      
+
+Acesse a url:    
 
 <http://localhost:9000>  
 
