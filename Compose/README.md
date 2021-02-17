@@ -143,15 +143,6 @@ networks:
 Informa que o serviço "db" estará na rede com o nome "internal" do Docker.
 
 
-<br>
-
-```
-depends_on:
-      - "db"
-```
-Informa ao Docker que o serviço "app" depende do sucesso da implantação do serviço "db".
-
-
 
 <br>
 
