@@ -207,6 +207,8 @@ Acesse a url:
 
 <http://localhost:9000>  
 
+Através desta UI podemos gerenciar imagens, conteiners, networks, volumes, etc..
+
 
 
 
