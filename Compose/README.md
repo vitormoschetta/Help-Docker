@@ -29,7 +29,7 @@ services:
     build:
       context: .
     ports:
-      - "2000:80"
+      - "5000:80"
     networks:
       - internal
     depends_on:
@@ -169,7 +169,7 @@ Obs: O console precisa estar no mesmo diretório do arquivo docker-compose.yaml.
 
 <br>
 
-O compose do Docker tratará de executar todos os processos que precisamos para subir ambos os containeres na mesma rede para que possam se comunicar.
+O compose do Docker tratará de executar todos os processos que precisamos para subir ambos os containeres na mesma rede.
 
 <br>
 
