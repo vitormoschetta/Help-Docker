@@ -9,7 +9,7 @@ NETCoreDev cria uma imagem de uma aplicação .NET Core para desenvolvimento e N
 
 ### Imagens da Microsoft .NET Core
 
-É importante observar que nossas imagens dependem de outras imagens, chamadas de imagem base:
+É importante observar que nossas imagens dependem de outras imagens, chamadas de **imagem base**:
 
 - Nosso app de produção fará uso da imagem **mcr.microsoft.com/dotnet/core/aspnet:3.1**.
 
