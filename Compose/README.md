@@ -206,6 +206,5 @@ Nossa connectionString já está configurada na camada de dominio (Domain/Settin
 "Server=sqlserver;Database=Backend;user=sa;password=Pass123*"
 ``` 
 
-Agora sim, acesse a url e efetue os requests.
+Agora sim, volte a acessar a url informada anteriormente e efetue os _requests_.
 
-http://localhost:5000/index.html
