@@ -66,7 +66,7 @@ Observe que copiamos apenas os arquivos necessários para restaurar o projeto na
 WORKDIR /App
 RUN dotnet restore
 ``` 
-Restaura as dependências do projeto. Ou seja, baixar os pacotes necessários para executar a aplicação no container posteriormente através desta imagem.
+Restaura as dependências do projeto. Ou seja, baixa os pacotes necessários para executar a aplicação no container.
 
 
 <br>
