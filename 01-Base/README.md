@@ -9,11 +9,11 @@ Veremos também como expor a porta do container ao host (márquina local) para q
 
 #### Mais detalhes nos seguintes diretórios
 
-[Sql Server](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Sqlserver)
+[Sql Server](https://github.com/vitormoschetta/Help-Docker/tree/main/01-Base/Sqlserver)
 
-[PostgreSQL](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Postgres)
+[PostgreSQL](https://github.com/vitormoschetta/Help-Docker/tree/main/01-Base/Postgres)
 
-[MySql](https://github.com/vitormoschetta/Help-Docker/tree/main/Databases/Mysql)
+[MySql](https://github.com/vitormoschetta/Help-Docker/tree/main/01-Base/Mysql)
 
 
 
