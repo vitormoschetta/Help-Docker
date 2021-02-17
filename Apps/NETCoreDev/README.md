@@ -139,7 +139,7 @@ Explicação dos parâmetros:
 
 ## Registrando o container
 ```
-docker run -d -p 8080:80 --name app -d netcoreapp
+docker run -d -p 5000:80 --name app -d netcoreapp
 ```
 
 Explicação dos parâmetros:
@@ -147,10 +147,10 @@ Explicação dos parâmetros:
 ```
 "-d" Significa detached/separado. Isso quer dizer que ele executa independente do seu host.
 
-"-p 5000:80" a porta 5000 (porta do app .NET Core) do container é mapeada para a porta 80 do host.
+"-p 5000:80" a porta 80 do container(porta padrão para aplicações web) é mapeada para a porta 5000 do host.
 
 "--name app" o nome do container.
 
-"-d netcoreapp" o nome da imagem que usaremos pra montar o container.
+"-d netcoreapp" o nome da imagem que usaremos para instanciar o container.
 ```
 
