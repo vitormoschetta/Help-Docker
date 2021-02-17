@@ -140,7 +140,7 @@ Define a senha do usuário root do MS SQL Server ao instanciar o contêiner.
 networks:
     - internal
 ```
-Informa que o serviço "db" estará na rede com o nome "internal" do Docker.
+Informa que o serviço "db",assim como o serviçoss "app", também estará na rede com o nome "internal" do Docker.
 
 
 
