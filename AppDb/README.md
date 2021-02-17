@@ -69,7 +69,31 @@ Se tudo ocorreu conforme esperávamos você poderá acessar sua aplicação na u
 
 Agora, não só irá acessar a documentação da API como poderá efetuar os _requests_, pois a comunicação entre o App e o BD está ocorrendo. 
 
-Se por acaso receber erro internal quando efetuar uma requisição, verifique a string de conexão. Se for usado exatamente as mesmas configurações deste tutorial, ela se parecerá com isso:
+Há ainda uma outra observação: nosso servidor MS SQL foi instanciado, porém, ainda não temos o banco de dados e a tabela necessária para efetuarmos o _request_ com sucesso.
+
+
+#### Criar BD  e Tabela
+
+Em um outro diretório iremos tratar de automatizar o script de criação do banco e da tabela. Por equanto, vamos criar na mão. 
+
+Crie um novo banco de dados chamado "Backend".
+
+Crie uma tabela chamada "Product", segue o _script_ para facilitar:
+
+```
+CREATE TABLE Product (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(max) NULL,
+    [Price] decimal(18,2) NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([Id])
+);
+
+INSERT INTO Product VALUES('1', 'PRODUCT A', 9)
+``` 
+
+<br>
+
+Nossa connectionString já está configurada na camada de dominio (Domain/Settings.cs):
 
 ```
 "Server=sqlserver;Database=Backend;user=sa;password=Pass123*"
@@ -77,12 +101,21 @@ Se por acaso receber erro internal quando efetuar uma requisição, verifique a 
 
 Observe que o "Server" não referenciar um IP ou mesmo o localhost, mas o nome do container do banco de dados, que no nosso caso é "sqlserver".
 
+<br>
+
+Agora sim, acesse a url e efetue os _requests_.
+
+<http://localhost:5000/index.html>
+
+
+
+
 
 <br>
 <br>
 
 #### Docker Compose 
-Existe uma forma de executar todo esse processo com um único comando. Sim, gerar uma imagem do App e instanciar ambos os conteineres com um só comando. 
+Existe uma forma de executar todo o processo de criação dos containeres com um único comando. Sim, gerar uma imagem do App e instanciar ambos os conteineres com um só comando. 
 
 Faremos isso utilizando **docker-compose**.
 
