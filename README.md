@@ -180,7 +180,7 @@ Ele usa o formato de arquivo YAML com metadados para definir e executar aplicati
 
 Usaremos ele agora para executar de forma mais simples todo o processo que fizemos no tópico anterior (Comunicação entre conteineres).
 
-Abordamos isso no diretório [Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/Compose).
+Abordamos isso no diretório [04-Compose](https://github.com/vitormoschetta/Help-Docker/tree/main/04-Compose).
 
 
 
