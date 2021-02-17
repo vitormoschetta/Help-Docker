@@ -160,17 +160,6 @@ String de conexão:
 
 
 
-
-<br>
-<br>
-
-## Volumes Docker
-Embora os contêineres possam criar, atualizar e excluir arquivos, essas alterações são perdidas quando o contêiner é removido. Com volumes, podemos mudar tudo isso.
-
-Abordamos este assunto no diretório [Volumes](https://github.com/vitormoschetta/Help-Docker/tree/main/Volumes).
-
-
-
 <br>
 <br>
 
@@ -252,6 +241,18 @@ docker image prune
 ```
 docker conteiner prune 
 ```
+
+
+
+
+<br>
+<br>
+
+## Volumes Docker
+Implementar conteúdo...
+
+
+
 
 
 <br>
