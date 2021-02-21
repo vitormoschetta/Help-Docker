@@ -4,10 +4,3 @@ Estamos usando a mesma estrutura dos exemplos anteriores. A diferença aqui é q
 
 Banco de dados embarcado significa dizer que ele mantém os dados em arquivo junto à aplicação. Ou seja, ele não precisa de um servidor. Por conta disso precisaremos subir apenas um container, que é da Aplicação.
 
-
-
-1. **Dockerfile**: Precisaremos adicionar uma linha:
-
-``` 
-RUN dotnet tool install --global dotnet-ef --version 3.1.4
-``` 
