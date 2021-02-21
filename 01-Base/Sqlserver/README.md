@@ -1,10 +1,12 @@
 ## Rodar BD MS Sql Server local com Docker
 
+
 #### Baixar imagem:
 
 ```
 docker pull mcr.microsoft.com/mssql/server:2019-latest
 ```
+
 
 <br>
 
@@ -14,11 +16,21 @@ docker pull mcr.microsoft.com/mssql/server:2019-latest
 docker images
 ```
 
+
 <br>
 
-#### Criar um Container a partir da Imagem:
+####  Criar um Container a partir da Imagem:
+
 ```
-docker run -e "ACCEPT_EULA=Y" --name sqlserver  -p 1433:1433 -e "SA_PASSWORD=Pass123*" -d mcr.microsoft.com/mssql/server:2019-latest
+docker create --name sqlserver -p 1433:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pass123*" mcr.microsoft.com/mssql/server:2019-latest
+```
+
+
+<br>
+
+#### Criar e Executar Container a partir da Imagem:
+```
+docker run --name sqlserver  -p 1433:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pass123*" -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 Explicação dos parâmetros: 
@@ -32,6 +44,7 @@ Explicação dos parâmetros:
 
 "-d mcr.microsoft.com/mssql/server:2019-latest" a imagem utilizada para criar o container.
 ```
+
 
 <br>
 
@@ -86,3 +99,7 @@ docker start <container_id or container_name>
 docker stop <container_id or container_name>
 ```
 
+
+<br>
+
+Quando usamos o comando para Criar e Executar o container, ele já entra em execução. Quando usamos o comando apenas para criar o container, aí é necessário inicializá-lo com o comando "docker start ..."
