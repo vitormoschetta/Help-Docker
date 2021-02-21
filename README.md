@@ -85,9 +85,25 @@ docker ps -a
 
 <br>
 
+#### Criar um container:
+```
+docker create --name <container_name> <image_name>
+```
+
+
+<br>
+
 #### Startar um container:
 ```
 docker start <container_id or container_name>
+```
+
+
+<br>
+
+#### Criar e Startar um container em um só comando:
+```
+docker run --name <container_name> -d <image_name>
 ```
 
 
