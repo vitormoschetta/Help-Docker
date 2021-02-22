@@ -1,0 +1,17 @@
+version: '3'
+
+volumes:
+  sqlite: {}
+
+services:
+  app:
+    container_name: app
+    image: netcoreapp
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5000:80" 
+    volumes:
+      - sqlite:/Data
+

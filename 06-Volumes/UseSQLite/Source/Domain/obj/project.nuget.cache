@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fkgW73JryrijrwO9ZoJ/c7iENf34yWtmVUj9ZsgYSW7XXWRTOqTsGXpn2bvYgnGyru5tKEkf85Y2ah0GmfYyug==",
+  "success": true,
+  "projectFilePath": "/home/victor/Documents/Vitor/GitHub/Backend-NETCore/Source/Domain/domain.csproj",
+  "expectedPackageFiles": [
+    "/home/victor/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/victor/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
