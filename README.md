@@ -218,9 +218,9 @@ Executar o container:
 ```
 docker run -d -p 9000:9000 --name portainer --restart always --network=host -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
-Onde:
-`--restart always`: informa que este container deve iniciar junto com o sistema.
-`--network=host`: informa que o container deve compartilhar a mesma rede do host. Isso quer dizer que de dentro do container é possível acessar o host.
+Onde:   
+`--restart always`: informa que este container deve iniciar junto com o sistema.   
+`--network=host`: informa que o container deve compartilhar a mesma rede do host. Isso quer dizer que de dentro do container é possível acessar o host.  
 
 Acesse a url:    
 
