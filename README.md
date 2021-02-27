@@ -122,6 +122,10 @@ docker stop <container_id or container_name>
 docker container rm <container_id or container_name>
 ```
 
+<br>
+
+
+
 
 <br>
 
