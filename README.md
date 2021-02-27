@@ -216,7 +216,8 @@ O portainer nada mais é do que uma imagem que instanciaremos em um conteiner, n
 
 Executar o container:
 ```
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+docker run -d -p 9000:9000 --name portainer --network=host -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+
 ```
 
 Acesse a url:    
