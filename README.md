@@ -280,7 +280,13 @@ docker conteiner prune
 Implementar conteúdo...
 
 
+<br>
+<br>
 
+##### Restart docker
+```
+systemctl restart docker
+```
 
 
 <br>
