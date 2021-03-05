@@ -270,6 +270,17 @@ docker image prune
 docker conteiner prune 
 ```
 
+<br>
+
+##### Restart docker
+```
+systemctl restart docker
+```
+
+##### Login Docker Hub
+```
+sudo docker login -p <password> -u <username>
+```
 
 
 
@@ -279,14 +290,6 @@ docker conteiner prune
 ## Volumes Docker
 Implementar conteúdo...
 
-
-<br>
-<br>
-
-##### Restart docker
-```
-systemctl restart docker
-```
 
 
 <br>
