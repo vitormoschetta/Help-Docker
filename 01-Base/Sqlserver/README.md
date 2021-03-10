@@ -22,7 +22,7 @@ docker images
 ####  Criar um Container a partir da Imagem:
 
 ```
-docker create --name sqlserver -p 1433:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pass123*" mcr.microsoft.com/mssql/server:2019-latest
+docker create --name sqlserver -p 1433:1433 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Pass123*" --network=host mcr.microsoft.com/mssql/server:2019-latest
 ```
 
 
