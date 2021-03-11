@@ -9,7 +9,7 @@ Necessário fazer login no docker CLI.
 Em seguida executar o comando:
 
 ```
-sudo docker run --name oracleDb -p 1521:1521 -p 5500:5500 store/oracle/database-enterprise:12.2.0.1
+sudo docker run --name oracleDb -p 1521:1521 -p 5500:5500 --network=host store/oracle/database-enterprise:12.2.0.1
 ```
 
 Obs: A imagem será baixada do docker hub caso ainda não tenha sido feito.
