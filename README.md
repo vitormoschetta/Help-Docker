@@ -308,6 +308,12 @@ Executar vários comandos de uma só vez:`
 ```
 O comando acima executa um bash scrip no container especificado [ea09b10056d4]. No caso, pede uma lista de diretorios existentes (ls) dentro do diretório /home.
 
+<br>
+
+Ficar 'logado' no bash do container:
+```
+sudo docker container exec -it ea09b10056d4 /bin/bash
+``` 
 
 <br>
 <br>
