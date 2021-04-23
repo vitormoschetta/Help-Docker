@@ -291,6 +291,17 @@ sudo docker login -p <password> -u <username>
 Implementar conteúdo...
 
 
+<br>
+
+
+## Comandos em container
+```
+sudo docker container exec [ea09b10056d4] ls
+```
+O comando acima executa um bash scrip no container especificado [ea09b10056d4]. No caso, pede uma lista de diretorios existentes (ls).
+
+
+
 
 <br>
 <br>
