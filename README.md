@@ -339,3 +339,5 @@ sudo docker cp ea09b10056d4:filename.txt /home/filename.txt
 <https://docs.docker.com/get-started/>  
 
 <https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-terminology>
+
+<https://qastack.com.br/programming/22907231/copying-files-from-host-to-docker-container>
