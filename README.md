@@ -296,11 +296,17 @@ Implementar conteúdo...
 
 ## Comandos em container
 ```
-sudo docker container exec [ea09b10056d4] ls
+sudo docker container exec ea09b10056d4 ls
 ```
-O comando acima executa um bash scrip no container especificado [ea09b10056d4]. No caso, pede uma lista de diretorios existentes (ls).
+O comando acima executa um bash scrip no container especificado (ea09b10056d4). No caso, pede uma lista de diretorios existentes (ls).
 
+<br>
 
+Executar vários comandos de uma só vez:`
+```
+ docker container exec ea09b10056d4 sh -c 'cd /home && ls'
+```
+O comando acima executa um bash scrip no container especificado [ea09b10056d4]. No caso, pede uma lista de diretorios existentes (ls) dentro do diretório /home.
 
 
 <br>
