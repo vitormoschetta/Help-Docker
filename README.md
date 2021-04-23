@@ -316,6 +316,20 @@ sudo docker container exec -it ea09b10056d4 /bin/bash
 ``` 
 
 <br>
+
+## Troca de arquivos dados entre host e container
+Copiar dados do host para o container:
+```
+sudo docker cp /home/filename.txt ea09b10056d4:newfilename.txt
+```
+
+Copiar dados do container para o host:
+```
+sudo docker cp ea09b10056d4:filename.txt /home/filename.txt
+```
+
+
+<br>
 <br>
 <br>
 <br>
