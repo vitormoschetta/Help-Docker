@@ -5,6 +5,7 @@
     docker stop ID_CONTAINER - interrompe o container com id em questão.
     docker start -a -i ID_CONTAINER - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
     docker rm ID_CONTAINER - remove o container com id em questão.
+    docker cp file.txt container_name:/home - copia um arquivo para dentro do container
     docker container prune - remove todos os containers que estão parados.
     docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.
     docker run -d -P --name NOME dockersamples/static-site - ao executar, dá um nome ao container.
