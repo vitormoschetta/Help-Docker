@@ -1,3 +1,4 @@
+    docker exec -it meu_container /bin/bash    - para entrar no container
     docker ps - exibe todos os containers em execução no momento.
     docker update --restart=always [container_name]  - altera o modelo de reinicializaço do container
     docker ps -a - exibe todos os containers, independentemente de estarem em execução ou não.
